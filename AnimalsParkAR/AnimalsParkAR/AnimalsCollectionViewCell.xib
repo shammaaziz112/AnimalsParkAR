@@ -50,7 +50,7 @@
             <connections>
                 <outlet property="animalImage" destination="stp-qZ-x63" id="5N5-fb-tx0"/>
                 <outlet property="animalName" destination="wDU-X1-zNF" id="SXR-eY-MiZ"/>
-                <outlet property="favoriteButton" destination="zyY-A8-hVU" id="H15-ZE-2X3"/>
+                <outlet property="favoriteButton" destination="zyY-A8-hVU" id="6iP-G5-5pB"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="99.107142857142847"/>
         </collectionViewCell>

@@ -17,5 +17,4 @@ class AnimalsCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
 }
