@@ -1,3 +1,317 @@
 [
-
+  {
+    "libraryIdentifier" : "9940a596176dd1b5e89f50c923c3dc61",
+    "format" : "model",
+    "displayName" : "Alligator_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "84dc51dade45e0da7992c45c113987f2",
+    "format" : "model",
+    "displayName" : "Animated_Flying_Fluttering_Butterfly_Loop.usdz"
+  },
+  {
+    "libraryIdentifier" : "59c38d0c4168f564cf13762fdc35d290",
+    "format" : "model",
+    "displayName" : "animated_giraffe.usdz"
+  },
+  {
+    "libraryIdentifier" : "c066f45ab2c009dc66d3a4adf785bb24",
+    "format" : "model",
+    "displayName" : "animated_rhino.usdz"
+  },
+  {
+    "libraryIdentifier" : "34f70068d0e8109810c20e998f386b9a",
+    "format" : "model",
+    "displayName" : "Bat.usdz"
+  },
+  {
+    "libraryIdentifier" : "09ead8b961ff2424f74c9aa4b27db70b",
+    "format" : "model",
+    "displayName" : "Bear.usdz"
+  },
+  {
+    "libraryIdentifier" : "c112036097354c39e1a19af4c599fc38",
+    "format" : "model",
+    "displayName" : "Bee.usdz"
+  },
+  {
+    "libraryIdentifier" : "6bf1e301c241235bda72b58861a59d0b",
+    "format" : "model",
+    "displayName" : "Blue_Whale_-_Textured.usdz"
+  },
+  {
+    "libraryIdentifier" : "eee315f915fdf630925ad60ad08ee8cb",
+    "format" : "model",
+    "displayName" : "Bream_Fish.usdz"
+  },
+  {
+    "libraryIdentifier" : "b9ea0d1deec8012c665fc19df272b1b5",
+    "format" : "model",
+    "displayName" : "Cat_Murdered_Soul_Suspect.usdz"
+  },
+  {
+    "libraryIdentifier" : "7a86d791cd6261694fba65e3cb741e89",
+    "format" : "model",
+    "displayName" : "Chicken-_Free.usdz"
+  },
+  {
+    "libraryIdentifier" : "8c25ca119a220a7f76daf7a4d9ad3ffc",
+    "format" : "model",
+    "displayName" : "Cow_frame_test.usdz"
+  },
+  {
+    "libraryIdentifier" : "75ec308684984c0d6f3457509d8f216b",
+    "format" : "model",
+    "displayName" : "deer_full_body.usdz"
+  },
+  {
+    "libraryIdentifier" : "796a6f46956b66f690faad14c31ae2a7",
+    "format" : "model",
+    "displayName" : "Dog_rigged.usdz"
+  },
+  {
+    "libraryIdentifier" : "c0096ad0ce0ebbb0506594cdc21ab25b",
+    "format" : "model",
+    "displayName" : "Duck_Walk_Free.usdz"
+  },
+  {
+    "libraryIdentifier" : "8673e448666d3264bf3a8cce18df1655",
+    "format" : "model",
+    "displayName" : "Elephant__Non_-_Commercial.usdz"
+  },
+  {
+    "libraryIdentifier" : "1ad5fa8848e24089286f1e34000a8310",
+    "format" : "model",
+    "displayName" : "Elephant_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "53b2bbbe400c63114a27edcab7295196",
+    "format" : "model",
+    "displayName" : "Emu_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "742ddeb8f76c9055168494d09f4c5be7",
+    "format" : "model",
+    "displayName" : "Female_Orca.usdz"
+  },
+  {
+    "libraryIdentifier" : "99ac08e3d372593632c1ce2749c30213",
+    "format" : "model",
+    "displayName" : "Game-Ready_dolphin_Swimming.usdz"
+  },
+  {
+    "libraryIdentifier" : "3957534e8d0bc37ac979fa794c27f30d",
+    "format" : "model",
+    "displayName" : "goat_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "6d8747016d0c28297fa1254662e37b45",
+    "format" : "model",
+    "displayName" : "Golden_Fish.usdz"
+  },
+  {
+    "libraryIdentifier" : "3115bb81f1d2f63deb841b4f214fba35",
+    "format" : "model",
+    "displayName" : "Gorilla_idle_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "d157b83dced5581c907dd6045a2e7c46",
+    "format" : "model",
+    "displayName" : "Grasshopper.usdz"
+  },
+  {
+    "libraryIdentifier" : "5b9ded073398c346b142c08ad9070867",
+    "format" : "model",
+    "displayName" : "Horse_Trot.usdz"
+  },
+  {
+    "libraryIdentifier" : "14e21f5e8a5e1b19fbd386e1e8664e44",
+    "format" : "model",
+    "displayName" : "Jaguar_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "21ebf4181beca7339b070e640fc9d7e8",
+    "format" : "model",
+    "displayName" : "Kangaroo_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "3efc2d7f43a2a3af0ff3e7a1146764c9",
+    "format" : "model",
+    "displayName" : "Leptinotarsa_decemlineata.usdz"
+  },
+  {
+    "libraryIdentifier" : "a60c6ef38ce6ca6b1786d9269c32809d",
+    "format" : "model",
+    "displayName" : "Lion_Non-Commercial.usdz"
+  },
+  {
+    "libraryIdentifier" : "44999749b807102d8cc4d0be49779740",
+    "format" : "model",
+    "displayName" : "Model_52A_-_Kemps_Ridley_Sea_Turtle_no_ID.usdz"
+  },
+  {
+    "libraryIdentifier" : "7d227acdaf063774e618dbbb6a23b957",
+    "format" : "model",
+    "displayName" : "Model_66A_-_Atlantic_Sturgeon.usdz"
+  },
+  {
+    "libraryIdentifier" : "b93dccb1cd06a2f80bd2a64cabb6b0d4",
+    "format" : "model",
+    "displayName" : "Model_71A_-_American_Eel.usdz"
+  },
+  {
+    "libraryIdentifier" : "30ab1a29c9da4bcf1b96ee40cc4847cf",
+    "format" : "model",
+    "displayName" : "Model_73A_-_Great_Hammerhead_Shark.usdz"
+  },
+  {
+    "libraryIdentifier" : "d8eee7544f235fc3dc3489b426e77454",
+    "format" : "model",
+    "displayName" : "Model_84A_-_Manta_Ray_Feeding.usdz"
+  },
+  {
+    "libraryIdentifier" : "efc7e48cf756964c8a463c5db0b5f7ec",
+    "format" : "model",
+    "displayName" : "Monkey-_Free.usdz"
+  },
+  {
+    "libraryIdentifier" : "14f672c14720154f1afaad5b917ffc97",
+    "format" : "model",
+    "displayName" : "Penguin_idle_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "ca0feed12a7f4c7388f667500372e5d9",
+    "format" : "model",
+    "displayName" : "Pig.usdz"
+  },
+  {
+    "libraryIdentifier" : "c31dab4d0e825606d8159aa91ebd9ee2",
+    "format" : "model",
+    "displayName" : "Rabbit.usdz"
+  },
+  {
+    "libraryIdentifier" : "1e803ae603de2cacade9d5d984c43a63",
+    "format" : "model",
+    "displayName" : "Raccoon_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "01d841b58cef58dc9480aec95363f45a",
+    "format" : "model",
+    "displayName" : "Reptile-Free.usdz"
+  },
+  {
+    "libraryIdentifier" : "c6f34adf5f28994bb6ec6f8f22aa0da4",
+    "format" : "model",
+    "displayName" : "Sailfish.usdz"
+  },
+  {
+    "libraryIdentifier" : "8a5235a64574a7ba7a81397c86b30d49",
+    "format" : "model",
+    "displayName" : "Snake_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "a5906e430b0a5e05a5fcd4074e80c1a5",
+    "format" : "model",
+    "displayName" : "tiger_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "ae834c149ffd526ec93bbcf1136e600a",
+    "format" : "model",
+    "displayName" : "Tosakin_goldfish.usdz"
+  },
+  {
+    "libraryIdentifier" : "c7d1168b1c3746ebcd7425f1038d3501",
+    "format" : "model",
+    "displayName" : "Weird_deepsea_anglerfish.usdz"
+  },
+  {
+    "libraryIdentifier" : "4bb5fdc3b006f4f58e7c6a77ff396ae1",
+    "format" : "model",
+    "displayName" : "Wolf_with_Animations.usdz"
+  },
+  {
+    "libraryIdentifier" : "70c4f560ea4fee2275c02ba59c824c7f",
+    "format" : "model",
+    "displayName" : "zebra_idle_animation.usdz"
+  },
+  {
+    "libraryIdentifier" : "5d5cafa713eb3e40bf92864e47857258",
+    "format" : "model",
+    "displayName" : "Ant_Textured_High_poly.usdz"
+  },
+  {
+    "libraryIdentifier" : "6db44c8dba6f4996ac26065002c00d8a",
+    "format" : "model",
+    "displayName" : "camel.usdz"
+  },
+  {
+    "libraryIdentifier" : "9e781aa14b3b6ceb498f6205174307ee",
+    "format" : "model",
+    "displayName" : "Ceramic_Ostrich_by_Fany_Gaillard.usdz"
+  },
+  {
+    "libraryIdentifier" : "6446acab05d36f287da100ab77f5616c",
+    "format" : "model",
+    "displayName" : "Free_to_use_-_Low_Poly_Horse.usdz"
+  },
+  {
+    "libraryIdentifier" : "2a63c6348712b87e71fd96a151cfb7cb",
+    "format" : "model",
+    "displayName" : "Lesser_grey_shrike.usdz"
+  },
+  {
+    "libraryIdentifier" : "27510891eb9cf1eade059554fb52120a",
+    "format" : "model",
+    "displayName" : "Owl_Mesh.usdz"
+  },
+  {
+    "libraryIdentifier" : "6e67a286a460300f0ba949b54857f798",
+    "format" : "model",
+    "displayName" : "Barn_owl.usdz"
+  },
+  {
+    "libraryIdentifier" : "4d54d85d0c49469d7dda3a62ba0a6cd1",
+    "format" : "model",
+    "displayName" : "Panda.usdz"
+  },
+  {
+    "libraryIdentifier" : "207bf1071891e377ad843af485173b4b",
+    "format" : "model",
+    "displayName" : "Panda copy.usdz"
+  },
+  {
+    "libraryIdentifier" : "8b957a2a1b334976ab472e31588ac89d",
+    "format" : "model",
+    "displayName" : "Гибрид_волка_и_шакала_Hybrid_of_wolf_and_jackal.usdz"
+  },
+  {
+    "libraryIdentifier" : "d155a3919531856a35d357c0a09e5b55",
+    "format" : "model",
+    "displayName" : "Peacock.usdz"
+  },
+  {
+    "libraryIdentifier" : "62dc1f8e0a55c7ffcdda3ed375ffeca7",
+    "format" : "model",
+    "displayName" : "ベンケイガニ__Benkei_Crab_Sesarmops_intermedius.usdz"
+  },
+  {
+    "libraryIdentifier" : "d62503feebd4accdceb440c646fad72b",
+    "format" : "model",
+    "displayName" : "Frog_Non-Commercial.usdz"
+  },
+  {
+    "libraryIdentifier" : "34e5577e8ea80384c2e96ca6cecee211",
+    "format" : "model",
+    "displayName" : "Crab_not_finished_yet.usdz"
+  },
+  {
+    "libraryIdentifier" : "83cc4b6862a8cd004359dc32f4f24f64",
+    "format" : "model",
+    "displayName" : "Dancing_Jelly_Tree.usdz"
+  },
+  {
+    "libraryIdentifier" : "1de39f901417bd805d1242ec11d22212",
+    "format" : "model",
+    "displayName" : "Jellyfish.usdz"
+  }
 ]

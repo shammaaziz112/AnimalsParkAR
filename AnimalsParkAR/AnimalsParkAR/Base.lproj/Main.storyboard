@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891.36690647482021" y="133.66834170854273"/>
+            <point key="canvasLocation" x="1232" y="-572"/>
         </scene>
         <!--Animals DetailsVC-->
         <scene sceneID="imN-dj-u0b">
@@ -45,6 +45,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="bookmark.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <segue destination="io6-SF-fkq" kind="show" id="csv-Sr-5Kr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,7 +84,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P94-rW-7yg"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VT9-NE-0Gj" firstAttribute="leading" secondItem="P94-rW-7yg" secondAttribute="leading" id="15o-Fz-sVp"/>
                             <constraint firstAttribute="bottom" secondItem="VT9-NE-0Gj" secondAttribute="bottom" id="4Sh-m8-FtA"/>
@@ -101,11 +104,89 @@
                     <connections>
                         <outlet property="AnimalsCollectionView" destination="VT9-NE-0Gj" id="XZx-La-TCa"/>
                         <outlet property="FilterCollectionView" destination="VQz-5F-gCY" id="Vev-dc-5l0"/>
+                        <segue destination="agC-qS-RX2" kind="show" identifier="showAnimal" id="X1c-QA-9xS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NbM-hw-5YE" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="73.381294964028783" y="133.66834170854273"/>
+        </scene>
+        <!--FavoriteVC-->
+        <scene sceneID="JRv-QE-lPh">
+            <objects>
+                <viewController id="io6-SF-fkq" customClass="FavoriteVC" customModule="AnimalsParkAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOs-yy-8DO">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VGu-jp-4St"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RQk-Bh-nDC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeB-5N-oCF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="879"/>
+        </scene>
+        <!--Show Animal DetailVC-->
+        <scene sceneID="0hU-Oh-tJ7">
+            <objects>
+                <viewController id="agC-qS-RX2" customClass="ShowAnimalDetailVC" customModule="AnimalsParkAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hfP-Ha-fp4">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZRP-mV-WEg">
+                                <rect key="frame" x="73" y="131" width="667" height="310"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWh-Sp-yCj">
+                                <rect key="frame" x="614" y="529" width="63" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="الصوت"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9IM-Tu-B35">
+                                <rect key="frame" x="30" y="574" width="774" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="OFP-yl-jjo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjD-fG-VHa">
+                                <rect key="frame" x="190" y="529" width="37" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ar"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cRq-4K-7Vr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZRP-mV-WEg" firstAttribute="top" secondItem="cRq-4K-7Vr" secondAttribute="top" constant="57" id="3g3-8p-lzp"/>
+                            <constraint firstItem="9IM-Tu-B35" firstAttribute="leading" secondItem="cRq-4K-7Vr" secondAttribute="leading" constant="30" id="3pY-Z0-RNw"/>
+                            <constraint firstItem="cRq-4K-7Vr" firstAttribute="trailing" secondItem="ZRP-mV-WEg" secondAttribute="trailing" constant="94" id="5yF-OM-geU"/>
+                            <constraint firstItem="IWh-Sp-yCj" firstAttribute="top" secondItem="ZRP-mV-WEg" secondAttribute="bottom" constant="88" id="8jy-02-o3f"/>
+                            <constraint firstItem="cRq-4K-7Vr" firstAttribute="bottom" secondItem="9IM-Tu-B35" secondAttribute="bottom" constant="200" id="CYe-Be-G5e"/>
+                            <constraint firstItem="9IM-Tu-B35" firstAttribute="top" secondItem="IWh-Sp-yCj" secondAttribute="bottom" constant="14" id="EcB-VS-I6H"/>
+                            <constraint firstItem="cRq-4K-7Vr" firstAttribute="trailing" secondItem="IWh-Sp-yCj" secondAttribute="trailing" constant="157" id="JvW-3d-fL3"/>
+                            <constraint firstItem="cRq-4K-7Vr" firstAttribute="trailing" secondItem="9IM-Tu-B35" secondAttribute="trailing" constant="30" id="QQu-Np-dGr"/>
+                            <constraint firstItem="IWh-Sp-yCj" firstAttribute="leading" secondItem="EjD-fG-VHa" secondAttribute="trailing" constant="387" id="WVv-RR-ZEr"/>
+                            <constraint firstItem="EjD-fG-VHa" firstAttribute="leading" secondItem="cRq-4K-7Vr" secondAttribute="leading" constant="190" id="fCh-5A-6HP"/>
+                            <constraint firstItem="EjD-fG-VHa" firstAttribute="top" secondItem="ZRP-mV-WEg" secondAttribute="bottom" constant="88" id="i4V-Vo-0jS"/>
+                            <constraint firstItem="IWh-Sp-yCj" firstAttribute="top" secondItem="ZRP-mV-WEg" secondAttribute="bottom" constant="88" id="njn-JQ-Gfx"/>
+                            <constraint firstItem="9IM-Tu-B35" firstAttribute="top" secondItem="IWh-Sp-yCj" secondAttribute="bottom" constant="14" id="pge-vb-OKQ"/>
+                            <constraint firstItem="9IM-Tu-B35" firstAttribute="top" secondItem="EjD-fG-VHa" secondAttribute="bottom" constant="14" id="uML-Ot-Bvw"/>
+                            <constraint firstItem="IWh-Sp-yCj" firstAttribute="leading" secondItem="EjD-fG-VHa" secondAttribute="trailing" constant="387" id="xhe-OQ-VUq"/>
+                            <constraint firstItem="ZRP-mV-WEg" firstAttribute="leading" secondItem="cRq-4K-7Vr" secondAttribute="leading" constant="73" id="zfw-nU-Skm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZI2-Ov-A51"/>
+                    <connections>
+                        <outlet property="showImageAnimal" destination="ZRP-mV-WEg" id="lWk-iq-RvZ"/>
+                        <outlet property="showTextAnimal" destination="9IM-Tu-B35" id="LIA-mG-JhA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ew1-5m-XfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926.61870503597129" y="133.66834170854273"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="naj-QP-RSU">
@@ -128,9 +209,6 @@
     </scenes>
     <resources>
         <image name="bookmark.circle" catalog="system" width="128" height="121"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
