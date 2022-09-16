@@ -49,7 +49,7 @@ extension AnimalsDetailsVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == AnimalsCollectionView{
             let cellA = collectionView.dequeueReusableCell(withReuseIdentifier: "AnimalsCell", for: indexPath) as! AnimalsCollectionViewCell
-            cellA.animalImage.image = UIImage(named: "Aa")
+            cellA.animalImage.image = UIImage(named: animalsArray[indexPath.row].image)
             cellA.animalName.text = animalsArray[indexPath.row].name
             return cellA
         }else {
