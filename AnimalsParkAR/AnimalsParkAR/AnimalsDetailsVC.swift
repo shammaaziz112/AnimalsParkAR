@@ -6,17 +6,22 @@
 //
 
 import UIKit
+import AVFoundation
+import RealityKit
 
 class AnimalsDetailsVC: UIViewController {
 
     @IBOutlet weak var AnimalsCollectionView: UICollectionView!
     @IBOutlet weak var FilterCollectionView: UICollectionView!
+    
     var name:String?
     var image:String?
     var detail:String?
+    var soundDetail:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         AnimalsCollectionView.register(UINib(nibName: "AnimalsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "AnimalsCell")
         FilterCollectionView.register(UINib(nibName: "FilterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FilterCell")
 
@@ -28,6 +33,7 @@ class AnimalsDetailsVC: UIViewController {
             VC.animalName = name
             VC.animalImage = image!
             VC.animalText = detail!
+            VC.animalSoundDetail = soundDetail!
         }else if segue.identifier == "favoriteAnimals", let VC = segue.destination as? FavoriteVC{
                         VC.favoriteName = name
                         VC.favoriteImage = image!
@@ -67,6 +73,7 @@ extension AnimalsDetailsVC: UICollectionViewDelegate{
         name = animalsArray[indexPath.row].name
         detail = animalsArray[indexPath.row].description
         image = animalsArray[indexPath.row].image
+        soundDetail = animalsArray[indexPath.row].sound
         
         performSegue(withIdentifier: "showAnimal", sender: nil)
     }
