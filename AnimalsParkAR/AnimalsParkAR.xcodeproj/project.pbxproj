@@ -80,6 +80,8 @@
 		63A0635B28D1FF1D00DD19D6 /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63A0635928D1FF1D00DD19D6 /* coreData.xcdatamodeld */; };
 		63C0B2B328D37924003D7A7C /* ShowAnimalDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0B2B228D37924003D7A7C /* ShowAnimalDetailVC.swift */; };
 		63D9CFFA28D26999006DE3CD /* StructFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D9CFF928D26999006DE3CD /* StructFile.swift */; };
+		CEBE29DC28D6314C00439AE5 /* FavoriteCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE29DA28D6314C00439AE5 /* FavoriteCVCell.swift */; };
+		CEBE29DD28D6314C00439AE5 /* FavoriteCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBE29DB28D6314C00439AE5 /* FavoriteCVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +178,8 @@
 		63A0635A28D1FF1D00DD19D6 /* coreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreData.xcdatamodel; sourceTree = "<group>"; };
 		63C0B2B228D37924003D7A7C /* ShowAnimalDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnimalDetailVC.swift; sourceTree = "<group>"; };
 		63D9CFF928D26999006DE3CD /* StructFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructFile.swift; sourceTree = "<group>"; };
+		CEBE29DA28D6314C00439AE5 /* FavoriteCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCVCell.swift; sourceTree = "<group>"; };
+		CEBE29DB28D6314C00439AE5 /* FavoriteCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteCVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +308,8 @@
 				63A0635928D1FF1D00DD19D6 /* coreData.xcdatamodeld */,
 				63D9CFF928D26999006DE3CD /* StructFile.swift */,
 				63C0B2B228D37924003D7A7C /* ShowAnimalDetailVC.swift */,
+				CEBE29DA28D6314C00439AE5 /* FavoriteCVCell.swift */,
+				CEBE29DB28D6314C00439AE5 /* FavoriteCVCell.xib */,
 			);
 			path = AnimalsParkAR;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 				6362684B28D4E62200A17C23 /* killerwhaleod.mp3 in Resources */,
 				6362685728D4E62200A17C23 /* Cheetahod.mp3 in Resources */,
 				6362682728D4E62100A17C23 /* chickenod.mp3 in Resources */,
+				CEBE29DD28D6314C00439AE5 /* FavoriteCVCell.xib in Resources */,
 				6362682C28D4E62100A17C23 /* Camelod.mp3 in Resources */,
 				6362682328D4E62100A17C23 /* Anguilliformesod.mp3 in Resources */,
 			);
@@ -522,6 +529,7 @@
 				63C0B2B328D37924003D7A7C /* ShowAnimalDetailVC.swift in Sources */,
 				63A0631F28D1D78300DD19D6 /* AppDelegate.swift in Sources */,
 				63A0632328D1D78300DD19D6 /* Experience.rcproject in Sources */,
+				CEBE29DC28D6314C00439AE5 /* FavoriteCVCell.swift in Sources */,
 				63A0635728D1DB5A00DD19D6 /* FilterCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
