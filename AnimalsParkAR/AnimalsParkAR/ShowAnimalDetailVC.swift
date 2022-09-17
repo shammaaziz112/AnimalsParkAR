@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AVFoundation
+import RealityKit
 
 class ShowAnimalDetailVC: UIViewController {
 
@@ -15,6 +17,9 @@ class ShowAnimalDetailVC: UIViewController {
     var animalName: String?
     var animalImage:String?
     var animalText:String?
+    var animalSoundDetail:String?
+    
+    var player: AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,5 +27,30 @@ class ShowAnimalDetailVC: UIViewController {
         showTextAnimal.text = animalText
         self.title = animalName
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showAR", let VC = segue.destination as? ViewController{
+            VC.animalNameAR = animalName!
+        }
+    }
+    
+    @IBAction func showAnimalAR(_ sender: Any) {
+        performSegue(withIdentifier: "showAR", sender: nil)
+    }
+    
+    @IBAction func soundButton(_ sender: Any) {
+
+        let url = Bundle.main.url(forResource: animalSoundDetail!, withExtension: "mp3")!
+
+            do {
+                player = try AVAudioPlayer(contentsOf: url)
+                guard let player = player else { return }
+
+                player.play()
+
+            } catch let error as NSError {
+                print(error.description)
+            }
     }
 }
