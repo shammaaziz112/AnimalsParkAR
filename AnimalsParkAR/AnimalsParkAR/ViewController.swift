@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(animalNameAR)
         switch animalNameAR {
         case "الماعز":
                     let boxAnchor = try! Experience.loadGoat()

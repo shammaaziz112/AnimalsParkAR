@@ -13,6 +13,10 @@ class AnimalsDetailsVC: UIViewController {
 
     @IBOutlet weak var AnimalsCollectionView: UICollectionView!
     @IBOutlet weak var FilterCollectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var categoryAnimal:[String] = ["برية","بحرية","برمائية","الحشرات","الرئيسية"]
+    var BackUpAnimal = animalsArray
     
     var name:String?
     var image:String?
@@ -48,7 +52,7 @@ extension AnimalsDetailsVC: UICollectionViewDataSource{
         if collectionView == AnimalsCollectionView{
             return animalsArray.count
         }else {
-            return 20
+            return categoryAnimal.count
         }
     }
     
@@ -60,12 +64,33 @@ extension AnimalsDetailsVC: UICollectionViewDataSource{
             return cellA
         }else {
             let cellF = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCell", for: indexPath) as! FilterCollectionViewCell
-            cellF.filterButton.setTitle("Animal", for: .normal)
+            cellF.filterButton.setTitle(categoryAnimal[indexPath.row], for: .normal)
+            cellF.filterButton.tag = indexPath.row
+            cellF.filterButton.addTarget(self, action: #selector(animalFilter), for: .touchUpInside)
             return cellF
         }
     }
     
+    @objc func animalFilter(sender:UIButton){
+        let indexPath1 = IndexPath(row: sender.tag, section: 0)
+        let filterItem = categoryAnimal[indexPath1.row]
+        var filter = [Animal]()
+        
+        if filterItem == "الرئيسية"{
+            animalsArray = BackUpAnimal
+        }else{
+            for item in animalsArray {
+                if animalsArray[indexPath1.row].category.contains(filterItem){
+                    filter = [item]
+                }
+            }
+            
+            animalsArray = filter
+        }
+        
+        AnimalsCollectionView.reloadData()
 
+    }
 }
 
 extension AnimalsDetailsVC: UICollectionViewDelegate{
@@ -76,5 +101,19 @@ extension AnimalsDetailsVC: UICollectionViewDelegate{
         soundDetail = animalsArray[indexPath.row].sound
         
         performSegue(withIdentifier: "showAnimal", sender: nil)
+    }
+}
+
+extension AnimalsDetailsVC: UISearchBarDelegate{
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == ""{
+        animalsArray = BackUpAnimal
+        AnimalsCollectionView.reloadData()
+        }else{
+        animalsArray = BackUpAnimal.filter({( animal : Animal) -> Bool in
+                return animal.name.contains(searchText)})
+        AnimalsCollectionView.reloadData()
+        }
     }
 }
