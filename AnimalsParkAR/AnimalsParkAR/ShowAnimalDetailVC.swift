@@ -13,6 +13,8 @@ class ShowAnimalDetailVC: UIViewController {
 
     @IBOutlet weak var showImageAnimal: UIImageView!
     @IBOutlet weak var showTextAnimal: UITextField!
+    @IBOutlet weak var arButton: UIButton!
+    @IBOutlet weak var readInfoButton: UIButton!
     
     var animalName: String?
     var animalImage:String?
@@ -23,6 +25,10 @@ class ShowAnimalDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        arButton.layer.cornerRadius = 16
+        readInfoButton.layer.cornerRadius = 16
+        
         showImageAnimal.image = UIImage(named: animalImage!)
         showTextAnimal.text = animalText
         self.title = animalName
