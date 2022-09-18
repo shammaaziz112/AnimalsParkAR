@@ -10,6 +10,7 @@ import UIKit
 class FilterCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var filterButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
