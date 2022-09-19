@@ -109,27 +109,6 @@ extension AnimalsDetailsVC: UICollectionViewDataSource{
             cellA.animalName.text = animalsArray[indexPath.row].name
             return cellA
         }
-    
-//    @objc func animalFilter(sender:UIButton){
-//        let indexPath1 = IndexPath(row: sender.tag, section: 0)
-//        let filterItem = categoryAnimal[indexPath1.row]
-//        var filter = [Animal]()
-//
-//        if filterItem == "الرئيسية"{
-//            animalsArray = BackUpAnimal
-//        }else{
-//            for item in animalsArray {
-//                if animalsArray[indexPath1.row].category.contains(filterItem){
-//                    filter = [item]
-//                }
-//            }
-//
-//            animalsArray = filter
-//        }
-//
-//        AnimalsCollectionView.reloadData()
-//
-//    }
 }
 
 extension AnimalsDetailsVC: UICollectionViewDelegate{
@@ -150,12 +129,9 @@ extension AnimalsDetailsVC: UISearchBarDelegate{
         animalsArray = BackUpAnimal
         AnimalsCollectionView.reloadData()
         }else{
-            for item in 0..<animalsArray.count {
-                if animalsArray[item].name == searchText{
-                    filter.append(animalsArray[item])
-                    }
-                }
-            animalsArray = filter
+            animalsArray = BackUpAnimal.filter({(animal:Animal) -> Bool in
+                return (animal.name.contains(searchText))
+            })
             AnimalsCollectionView.reloadData()
         }
     }
