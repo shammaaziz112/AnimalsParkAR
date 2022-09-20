@@ -9,12 +9,12 @@ import UIKit
 
 class AnimalsCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var heartImage: UIImageView!
     @IBOutlet weak var animalImage: UIImageView!
+    @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var animalName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
+        animalImage.layer.cornerRadius = 16    }
 }
