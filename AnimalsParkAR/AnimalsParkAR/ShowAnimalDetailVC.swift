@@ -12,10 +12,11 @@ import RealityKit
 class ShowAnimalDetailVC: UIViewController {
 
     @IBOutlet weak var showImageAnimal: UIImageView!
-    @IBOutlet weak var showTextAnimal: UITextField!
     @IBOutlet weak var arButton: UIButton!
     @IBOutlet weak var readInfoButton: UIButton!
     
+    @IBOutlet weak var showAnimalTextLabel: UILabel!
+    @IBOutlet weak var DesignView: UIView!
     var animalName: String?
     var animalImage:String?
     var animalText:String?
@@ -25,12 +26,17 @@ class ShowAnimalDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.9491549134, green: 0.5556038618, blue: 0.387765348, alpha: 1)
+
+
+        arButton.layer.cornerRadius = 10
+        readInfoButton.layer.cornerRadius = 10
         
-        arButton.layer.cornerRadius = 16
-        readInfoButton.layer.cornerRadius = 16
+        showImageAnimal.layer.cornerRadius = 16
+        DesignView.layer.cornerRadius = 16
         
         showImageAnimal.image = UIImage(named: animalImage!)
-        showTextAnimal.text = animalText
+        showAnimalTextLabel.text = animalText
         self.title = animalName
         // Do any additional setup after loading the view.
     }

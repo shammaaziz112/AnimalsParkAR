@@ -8,7 +8,6 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,9 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
-        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
-        IQKeyboardManager.shared.previousNextDisplayMode = .default
-        
+                IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+                IQKeyboardManager.shared.previousNextDisplayMode = .default
+        UIView.appearance().semanticContentAttribute = .forceRightToLeft
+        UISearchBar.appearance().setImage(UIImage(named: "new_search_icon"), for: UISearchBar.Icon.search, state: UIControl.State.normal)
         return true
     }
 
