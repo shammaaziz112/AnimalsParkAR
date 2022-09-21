@@ -21,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 IQKeyboardManager.shared.previousNextDisplayMode = .default
         UIView.appearance().semanticContentAttribute = .forceRightToLeft
         UISearchBar.appearance().setImage(UIImage(named: "new_search_icon"), for: UISearchBar.Icon.search, state: UIControl.State.normal)
-
-
         return true
     }
 

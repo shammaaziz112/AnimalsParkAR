@@ -75,6 +75,7 @@
 		63A0635328D1DB4300DD19D6 /* AnimalsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0635128D1DB4300DD19D6 /* AnimalsCollectionViewCell.swift */; };
 		63A0635428D1DB4300DD19D6 /* AnimalsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A0635228D1DB4300DD19D6 /* AnimalsCollectionViewCell.xib */; };
 		63A0635B28D1FF1D00DD19D6 /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63A0635928D1FF1D00DD19D6 /* coreData.xcdatamodeld */; };
+		63AE03DC28D88AB200B9135D /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 63AE03DB28D88AB200B9135D /* IQKeyboardManagerSwift */; };
 		63C0B2B328D37924003D7A7C /* ShowAnimalDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C0B2B228D37924003D7A7C /* ShowAnimalDetailVC.swift */; };
 		63D9CFFA28D26999006DE3CD /* StructFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D9CFF928D26999006DE3CD /* StructFile.swift */; };
 		67DAC26728D9DB45002F6818 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 67DAC26628D9DB45002F6818 /* IQKeyboardManagerSwift */; };
@@ -179,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67DAC26728D9DB45002F6818 /* IQKeyboardManagerSwift in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
